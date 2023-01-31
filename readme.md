@@ -7,14 +7,17 @@ Here I'm showing you how to use this function.
 
 ## 1. First we require readline function
 
-<code>const readline = require("readline");</code>
+```
+const readline = require("readline");
+```
 
 ## 2. We need to create an interfaces dor input and output
 
-<code>const rl = readline.createInterface({
+```const rl = readline.createInterface({
 input: process.stdin,
 output: process.stdout,
-});</code>
+});
+```
 
 ## 3. If you want to input many times as you like then you have to use rl.on
 
@@ -89,4 +92,4 @@ rl.on("line", (line) => {
 
 # N.B: Note That you can not use <u><b>on</b></u> and <u><b>question</b></u> function in a same js file.If you do then <u><b>question</b></u> will work first and if you write <u><b>on</b></u> first then it will never work
 
-With my little knowledge I tried to basics of readline function. Feel free to correction any of my mistake and contribute your knowledge of readline function in this repo
+I tried to write basics of readline function with my little knowledge and all data that I have found in google. Feel free to correction any of my mistake and contribute your knowledge of readline function in this repo
